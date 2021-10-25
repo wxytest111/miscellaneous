@@ -31,7 +31,7 @@ cd /opt/works/deployment
 
 
 echo 'nohup java -jar miscellaneous-1.0-$GO_PIPELINE_LABEL.jar  --spring.profiles.active=prod --server.port=8091 > /dev/null 2>&1 &'
-nohup java -jar miscellaneous-1.0-$GO_PIPELINE_LABEL.jar  --spring.profiles.active=prod --server.port=8091 > hole-config.log 2>&1 &
+nohup java -jar miscellaneous-1.0-$GO_PIPELINE_LABEL.jar  --spring.profiles.active=prod --server.port=8091 > miscellaneous.log 2>&1 &
 
 
 EOF

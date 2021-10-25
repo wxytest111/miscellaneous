@@ -20,7 +20,7 @@ else
 	ssh root@$remote_host "kill -9 ${pid}"
 fi
 
-scp ${server}-1.0-$GO_PIPELINE_LABEL.jar root@$remote_host:/tmp/
+scp ${server}-1.0-SNAPSHOT-$GO_PIPELINE_LABEL.jar root@$remote_host:/tmp/
 ssh root@$remote_host "mv -f /tmp/${server}-1.0-SNAPSHOT-${GO_PIPELINE_LABEL}.jar /opt/works/deployment"
 done
 
